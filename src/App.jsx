@@ -10,11 +10,19 @@ import Footer from "./sections/Footer";
 
 const App = () => {
   return (
-    <div className="bg-primary w-full min-h-screen pt-8">
-      <Navbar />
-      <Hero />
-      <About />
-      <Communities />
+    <div className="bg-primary w-full overflow-hidden">
+      <div className="sm:px-32 px-6 pt-8 flex justify-center items-center">
+        <div className="xl:max-w-[1280px] w-full">
+          <Navbar />
+        </div>
+      </div>
+
+      <div className="bg-primary sm:px-24 px-5 flex justify-center items-start">
+          <div className="xl:max-w-[1280px] w-full">
+            <Hero />
+            <About />
+          </div>
+      </div>
     </div>
   );
 };
